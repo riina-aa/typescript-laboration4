@@ -1,0 +1,57 @@
+
+header {
+    text-align: center;
+    padding: 1rem; 
+}
+
+section {
+    padding: 4rem;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+}
+
+.search-container {
+    padding: 1rem 0rem;
+}
+
+.search-container input {
+    border: solid 2px #694A3A; 
+    padding: 0.5rem 1rem; 
+    width: 20%;
+    font-family: "Poppins", sans-serif;
+}
+
+.table-container {
+    padding: 4rem; 
+}
+
+.table-container table {
+    width: 60%;
+    background-color: white;
+    border-collapse: collapse;
+    border: solid 2px #694A3A;
+}
+
+.table-container table th {
+    padding: 1rem;
+    text-align: start;
+    border: solid 2px #694A3A;
+}
+
+.table-container table th:hover {
+    background-color: #B2675E;
+    cursor: pointer;
+}
+
+.table-container table td {
+    padding: 1rem;
+    border: solid 2px #694A3A;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
