@@ -9,21 +9,24 @@
     </section>
     <div class="table-container">
         <div class="search-container">
-            <input type="text" id="search" placeholder="Sök kurs..." [ngModel]="searchTerm()" (ngModelChange)="searchTerm.set($event)">
+            <input type="text" id="search" placeholder="Sök kurs..." [ngModel]="searchTerm()"
+                (ngModelChange)="searchTerm.set($event)">
         </div>
         <table>
             <thead>
-                <th (click)="sortCourses('code')">Kurskod</th>
-                <th (click)="sortCourses('coursename')">Kursnamn</th>
-                <th (click)="sortCourses('progression')">Progression</th>
+                <tr>
+                    <th (click)="sortCourses('code')">Kurskod</th>
+                    <th (click)="sortCourses('coursename')">Kursnamn</th>
+                    <th (click)="sortCourses('progression')">Progression</th>
+                </tr>
             </thead>
             <tbody>
                 @for(course of displayedCourses(); track course.code) {
-                    <tr>
-                        <td>{{ course.code | uppercase }}</td>
-                        <td>{{ course.coursename }}</td>
-                        <td>{{ course.progression }}</td>
-                    </tr>
+                <tr>
+                    <td>{{ course.code | uppercase }}</td>
+                    <td>{{ course.coursename }}</td>
+                    <td>{{ course.progression }}</td>
+                </tr>
                 }
             </tbody>
         </table>

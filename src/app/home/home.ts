@@ -1,4 +1,4 @@
-import { Component, signal, inject, computed, isWritableSignal } from '@angular/core';
+import { Component, signal, inject, computed } from '@angular/core';
 import { Courses, FetchCourses } from '../services/fetch-courses';
 import { UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
